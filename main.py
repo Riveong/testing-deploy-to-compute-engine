@@ -1,6 +1,7 @@
 import uvicorn
 from fastapi import FastAPI, HTTPException, Path, Query
 from pydantic import BaseModel
+import os
 
 app = FastAPI()
 port = int(os.getenv("PORT"))
